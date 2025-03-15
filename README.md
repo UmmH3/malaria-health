@@ -2,19 +2,62 @@
 
 The aim is to analayse global malaria case and death estimates with the goal of informimg strategies to reducing the impact of malaria in Nigeria.
 
-The dataset, sourced from the World Health Organization (WHO),and retrieved for Kaggle provides insights into malaria incidence, mortality, and regional disparities. 
+The dataset, sourced from the World Health Organization (WHO),and retrieved from Kaggle provides insights into malaria incidence, mortality, and regional disparities. 
 
 The analysis includes exploratory data analysis (EDA), data visualization, statistical analysis, and a simple ETL (Extract, Transform, Load) process.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
-## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+## The Dataset
+The dataset was sourced from Kaggle 
+* The dataset comprises of 3 .csv files -
+
+[Download Reported Numbers](./jupyter_notebooks/raw/reported_numbers.csv)
+
+[Download incidence](./jupyter_notebooks/raw/incidence.csv)
+
+[Download estimated_numbers](./jupyter_notebooks/raw/estimated_numbers.csv)
+
+* Description:
+
+•Dimensions;
+
+estimated_numbers: 855 rows and 11 columns
+
+incidence: 2033 rows and 4 columns
+
+reported_numbers: 1944 rows and 5 columns
+
+•Variables:
+
+Country: Country name
+
+Year: Year of the data (2016 or 2017)
+
+No. of cases: Number of reported malaria cases
+
+No. of deaths: Number of reported malaria deaths
+
+No. of cases_median: Median estimate of malaria cases
+
+No. of cases_min: Minimum estimate of malaria cases
+
+No. of cases_max: Maximum estimate of malaria cases
+
+No. of deaths_median: Median estimate of malaria deaths
+
+No. of deaths_min: Minimum estimate of malaria deaths
+
+No. of deaths_max: Maximum estimate of malaria deaths
+
+WHO Region: WHO region to which the country belongs
 
 
 ## Business Requirements
-* Describe your business requirements
+
+* By focusing on effective resource allocation, targeted interventions, and improved monitoring and evaluation, it is hoped that data driven strategies will help to reduce malaria incidence and death rates overall. 
+The main objective is to reduce incidence by 20% and to improve the reporting of cases by implementing real time malaria surveillance in healthcare systems. This will hav a significant impact on decreasing underreporting of cases.
 
 
 ## Hypothesis and how to validate?
@@ -92,3 +135,6 @@ The analysis includes exploratory data analysis (EDA), data visualization, stati
 
 ## Acknowledgements (optional)
 * Thank the people who provided support through this project.
+
+
+[def]: data/incidence.csv
