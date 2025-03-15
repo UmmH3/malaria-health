@@ -1,6 +1,10 @@
-# Project XYZ
+# MALARIA INCIDENCE REDUCTION IN NIGERIA
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+The aim is to analayse global malaria case and death estimates with the goal of informimg strategies to reducing the impact of malaria in Nigeria.
+
+The dataset, sourced from the World Health Organization (WHO),and retrieved for Kaggle provides insights into malaria incidence, mortality, and regional disparities. 
+
+The analysis includes exploratory data analysis (EDA), data visualization, statistical analysis, and a simple ETL (Extract, Transform, Load) process.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
