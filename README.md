@@ -99,7 +99,9 @@ P-value: 0.15961031455633856
 
 Fail to reject H₀: No significant decreasing trend in malaria incidence.
 
-• CONCLUSION:
+• CONCLUSION: 
+
+The Null hypothesis is found true,there is no significant decreas in Malaria incidence. This means the incidence has been fluctuating over the years.
 
 
 # **Hypothesis 3**:  Using ARIMA(AutoRegressive Integrated Moving Average)
@@ -108,6 +110,18 @@ Time series forecasting checks if future malaria incidence can be predicted in N
 • NULL HYPOTHESIS(H<sub>0</sub>): The malaria incidence follows an unpredictable pattern
 
 •  ALTERNATIVE HYPOTHESIS|(H<sub>1</sub>): The incidence pattern is predictable and able to forecast
+
+•  OUTPUT:
+
+Forecasted Malaria Incidence for the next 5 years: 856    95.426729
+857    91.061710
+858    91.364738
+859    91.343701
+860    91.345162
+Name: predicted_mean, dtype: float64
+
+• CONCLUSION:
+
 
 
 
