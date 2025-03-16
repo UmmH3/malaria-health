@@ -121,7 +121,7 @@ Forecasted Malaria Incidence for the next 5 years: 856    95.426729
 Name: predicted_mean, dtype: float64
 
 • CONCLUSION:
-
+From the plot we can see the forecast as red dotted lines which is flat and hints that the model isn't capturing the trend.
 
 
 
@@ -137,6 +137,165 @@ Name: predicted_mean, dtype: float64
 * List your business requirements and a rationale to map them to the Data Visualisations
 
 ## Analysis techniques used
+
+ The following analyis were carried in order they are listed here. 
+
+## ETL: Extract,Transform and Load
+
+* Extract:
+
+Extraction of needed data from the 3 datasets uploaded unto Jupyter notebook.
+
+* Transform: 
+
+The csv files were loaded onto the Dataframe
+
+Converted columns to appropriate data types (numeric, string).
+
+Checked and handled missing values (if any) using appropriate methods.
+
+Filtering data needed to carry out basic data insights
+
+Merged datasets to carry out further analysis
+
+* Load
+
+The merged dataset(transformed) was used in the EDA, visualisations and statistical analysis.
+
+## Exploratory Data Analysis (EDA)
+
+To understand the data, the following exploratory analysis was done:
+
+Summary Statistics: 
+Calculated descriptive statistics (mean, median, standard deviation, min, max) for numeric columns to understand data distribution.
+
+Missing Values: Checked for and handled missing values in the dataset.
+
+Data Distribution:
+
+Histograms of malaria cases and deaths.
+
+Box plots to identify outliers and understand the distribution of cases/deaths by WHO region.
+
+Country-Level Analysis:
+
+Identified countries with the highest and lowest malaria cases and deaths.
+
+Analyzed the trend of countries with zero cases or deaths.
+
+Regional Analysis:
+
+Aggregated data by WHO region to understand the regional burden of malaria.
+
+Correlation Analysis:
+
+Computed the correlation matrix to understand the relationships between different variables (e.g., cases and deaths).
+
+5. Visualizations
+The following visualizations were generated to provide insights into the data:
+
+Bar Chart: Comparison of reported vs. estimated cases for the top 10 countries.
+
+Time Series Plot: Visualization of malaria trends in Nigeria.
+
+Regional Comparison Bar Chart: Malaria cases/deaths by WHO region
+
+Heatmap: Correlation between cases/deaths
+
+Box plot: Visualization of the distribution of malaria data
+
+Charts of zero-cases countries: Display of the countries that recorded zero counts for malaria.
+
+6. Statistical Analysis
+Hypothesis Testing:
+
+Significant Difference Between Reported and Estimated Cases.
+
+Regional Differences in Malaria Cases.
+
+Probability Computation:
+
+Probability of a country from a given region having more than a certain number of cases.
+
+7. Key Findings
+Regional Disparities: Africa bears the highest malaria burden globally, with countries like Nigeria, the Democratic Republic of Congo, and Uganda reporting the highest numbers of cases and deaths.
+
+Zero-Case Countries: Several countries (e.g., China, Morocco) report zero cases, indicating potential elimination or very low transmission.
+
+Variability in Estimates: Estimated cases show greater variability across regions compared to reported cases, highlighting potential uncertainties in modeling methods.
+
+Underreporting: Differences between reported and estimated cases suggest underreporting in regions with limited surveillance infrastructure.
+
+High Correlation: Strong positive correlation between reported cases and deaths, indicating a direct relationship between disease incidence and mortality.
+
+8. Code Structure
+The project consists of the following Python scripts:
+
+etl.py: Script for extracting, transforming, and loading the data.
+
+eda.py: Script for performing exploratory data analysis and generating summary statistics.
+
+visualizations.py: Script for creating visualizations such as bar charts, time series plots, and heatmaps.
+
+statistical_analysis.py: Script for performing statistical tests and computing probabilities.
+
+9. Dependencies
+The following tools are required to run this analysis
+
+9.1 Software requirements
+Python (>=3.6)
+
+9.2 Python Libraries
+pandas
+
+matplotlib
+
+seaborn
+
+scipy
+
+statsmodels
+
+To install these dependencies, run:
+
+bash
+pip install pandas matplotlib seaborn scipy statsmodels
+10. Usage
+To reproduce the analysis, follow these steps:
+
+bash
+# Clone the repository
+git clone [repository URL]
+
+# Navigate to the project directory
+cd [project directory]
+
+# Run the ETL script
+python etl.py
+
+# Run the EDA script
+python eda.py
+
+# Run the visualizations script
+python visualizations.py
+
+# Run the statistical analysis script
+python statistical_analysis.py
+11. Potential Limitations
+Data Quality: The accuracy of this project is based on the quality of the underlying data.
+
+Causality: Correlation does not equal causation.
+
+External Factors: The model may not account for policy changes or changes to the health landscape.
+
+12. Future Work
+Analyze Intervention Effectiveness: Evaluate the impact of malaria interventions (e.g., insecticide-treated bed nets, indoor residual spraying) on case and death rates.
+
+Develop Predictive Models: Build time series models to forecast future malaria trends.
+
+Geospatial Analysis: Incorporate spatial data to understand geographic patterns of malaria transmission and mortality.
+
+
 * List the data analysis methods used and explain limitations or alternative approaches.
 * How did you structure the data analysis techniques. Justify your response.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
