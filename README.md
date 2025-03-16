@@ -60,7 +60,7 @@ WHO Region: WHO region to which the country belongs
 The main objective is to reduce incidence by 20% and to improve the reporting of cases by implementing real time malaria surveillance in healthcare systems. This will hav a significant impact on decreasing underreporting of cases.
 
 
-## Hypothesis and how to validate?
+## Hypothesis and validation
 
 # **Hypothesis 1**:  Using Chi-Square Test
 
@@ -70,33 +70,16 @@ To test if underreporting has a significant effect on the mortality in Nigeria
 
 •  ALTERNATIVE HYPOTHESIS|(H<sub>1</sub>): Malaria deaths are significantly higher in areas of high underreporting of malaria cases.
 
-•  VALIDATION: The Chi_Test was computed using python code and corresponding value was output alomgside the p-value. A heatmap was used to visually interprete the CHI-Square Test.
+•  VALIDATION: The Chi_Test was computed using python code and corresponding value was output alongside the p-value. A heatmap was used to visually interprete the CHI-Square Test.
+The Chi-Test compared the frequencies of observed estimated and reported cases.
 
-import scipy.stats as stats
+•  OUTPUT: 
 
-# Define underreporting as the difference between estimated and reported cases
-df_merged['Underreporting'] = df_merged['No. of cases_median'] - df_merged['Reported Cases']
-df_merged['Underreporting Level'] = df_merged['Underreporting'].apply(lambda x: 'High' if x > df_merged['Underreporting'].median() else 'Low')
+**Chi-Square Statistic**: 562.6588785046729  
+**P-value**: 2.219350768431402e-124  
+**Reject H₀**: Underreporting significantly affects malaria deaths in Nigeria.
 
-# Define death levels (High/Low based on median)
-df_merged['Death Level'] = df_merged['No. of deaths_median'].apply(lambda x: 'High' if x > df_merged['No. of deaths_median'].median() else 'Low')
-
-# Create contingency table
-contingency_table = pd.crosstab(df_merged['Underreporting Level'], df_merged['Death Level'])
-
-# Perform Chi-Square test
-chi2, p, dof, expected = stats.chi2_contingency(contingency_table)
-
-# Print results
-print(f"Chi-Square Statistic: {chi2}")
-print(f"P-value: {p}")
-
-# Interpretation
-if p < 0.05:
-    print("Reject H₀: Underreporting significantly affects malaria deaths in Nigeria.")
-else:
-    print("Fail to reject H₀: No significant effect of underreporting on malaria deaths.")
-
+•  CONCLUSION: The Null hypothesis is rejected showing underreporting impacts deaths ion Nigeria significantly.
 
 
 # **Hypothesis 2**: Using Mann-Kendall Trend Test
@@ -106,6 +89,18 @@ To check the decrease of malaria incidence over time in Nigeria
 • NULL HYPOTHESIS(H<sub>0</sub>): No significant trend in malaria incidence decrease
 
 •  ALTERNATIVE HYPOTHESIS|(H<sub>1</sub>): malaria incidence has decreased due to interventions over time
+
+•  VALIDATION: THe Mann-Kendall test is used to find out if there is a trend in the decrease of incidence over the years. This will help give better understanding into cause for decrease either climate,weather or better surveillance method.
+
+•  OUTPUT: 
+Trend: no trend
+
+P-value: 0.15961031455633856
+
+Fail to reject H₀: No significant decreasing trend in malaria incidence.
+
+• CONCLUSION:
+
 
 # **Hypothesis 3**:  Using ARIMA(AutoRegressive Integrated Moving Average)
 Time series forecasting checks if future malaria incidence can be predicted in Nigeria
@@ -117,7 +112,7 @@ Time series forecasting checks if future malaria incidence can be predicted in N
 
 
 
-* List here your project hypothesis(es) and how you envision validating it (them) 
+
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
