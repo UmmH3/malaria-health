@@ -61,6 +61,62 @@ The main objective is to reduce incidence by 20% and to improve the reporting of
 
 
 ## Hypothesis and how to validate?
+
+# **Hypothesis 1**:  Using Chi-Square Test
+
+To test if underreporting has a significant effect on the mortality in Nigeria
+
+• NULL HYPOTHESIS(H<sub>0</sub>): Underreporting does not have a significant impact on malaria deaths in Nigeria
+
+•  ALTERNATIVE HYPOTHESIS|(H<sub>1</sub>): Malaria deaths are significantly higher in areas of high underreporting of malaria cases.
+
+•  VALIDATION: The Chi_Test was computed using python code and corresponding value was output alomgside the p-value. A heatmap was used to visually interprete the CHI-Square Test.
+
+import scipy.stats as stats
+
+# Define underreporting as the difference between estimated and reported cases
+df_merged['Underreporting'] = df_merged['No. of cases_median'] - df_merged['Reported Cases']
+df_merged['Underreporting Level'] = df_merged['Underreporting'].apply(lambda x: 'High' if x > df_merged['Underreporting'].median() else 'Low')
+
+# Define death levels (High/Low based on median)
+df_merged['Death Level'] = df_merged['No. of deaths_median'].apply(lambda x: 'High' if x > df_merged['No. of deaths_median'].median() else 'Low')
+
+# Create contingency table
+contingency_table = pd.crosstab(df_merged['Underreporting Level'], df_merged['Death Level'])
+
+# Perform Chi-Square test
+chi2, p, dof, expected = stats.chi2_contingency(contingency_table)
+
+# Print results
+print(f"Chi-Square Statistic: {chi2}")
+print(f"P-value: {p}")
+
+# Interpretation
+if p < 0.05:
+    print("Reject H₀: Underreporting significantly affects malaria deaths in Nigeria.")
+else:
+    print("Fail to reject H₀: No significant effect of underreporting on malaria deaths.")
+
+
+
+# **Hypothesis 2**: Using Mann-Kendall Trend Test
+
+To check the decrease of malaria incidence over time in Nigeria
+
+• NULL HYPOTHESIS(H<sub>0</sub>): No significant trend in malaria incidence decrease
+
+•  ALTERNATIVE HYPOTHESIS|(H<sub>1</sub>): malaria incidence has decreased due to interventions over time
+
+# **Hypothesis 3**:  Using ARIMA(AutoRegressive Integrated Moving Average)
+Time series forecasting checks if future malaria incidence can be predicted in Nigeria
+
+• NULL HYPOTHESIS(H<sub>0</sub>): The malaria incidence follows an unpredictable pattern
+
+•  ALTERNATIVE HYPOTHESIS|(H<sub>1</sub>): The incidence pattern is predictable and able to forecast
+
+
+
+
 * List here your project hypothesis(es) and how you envision validating it (them) 
 
 ## Project Plan
