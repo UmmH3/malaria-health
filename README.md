@@ -246,8 +246,19 @@ https://public.tableau.com/shared/2XJPKF2YH?:display_count=n&:origin=viz_share_l
 * Had initial hurdle of loading the merged datyaset onto the EDA notebook. I found out i was using the wrong path name, i assumed it was required but it wasn't because it had alraedy been saved in jupyter so coukld load directly.
 * Had to change the data type for the Estimated death and Estmated Cases when initially loaded on Tableau to integer because it was still in object.
 
+## EVALUATION:
+Summary of Findings
+Malaria Incidence and Cases: The overall trend shows a gradual decline in reported malaria cases and incidence rates from 2010 to 2018. 
 
+* Limitations:
+There were certain limitations to this analysis due to no data specific to regions in Nigeria,so unable to carry out analysis by region.
 
+Seasonal data would have been ideal to  provide insight into seasonal trend. This plays a part in mosquito breeding. 
+
+Inconsistent Data Reporting: Some years and regions have missing or underreported malaria cases.
+
+Recommendations:
+Improving Data Quality by strengthening malaria surveillance systems to enable better decision-making.
 
 ## Main Data Analysis Libraries
 The project consists of the following Python scripts:
