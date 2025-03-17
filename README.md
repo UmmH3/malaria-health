@@ -124,17 +124,27 @@ Name: predicted_mean, dtype: float64
 From the plot we can see the forecast as red dotted lines which is flat and hints that the model isn't capturing the trend.
 
 
+## Project outline
+The project was based on:
+* Setting up a work tracker: Use of the Kanban board
+* Objectives: this was set after researching dataset
+* Data sourcing: from Kaggle dataset
+* Data Preparation: ETL 
+* EDA
+* Visualisations
+* Statistical Analysis
+* Dashboard and Visualisation:Tableau for story telling of the data
+* Documentation: documenting project processes
+* Conclusion: form the analysis
+* Evaluation: Lessons learnt from the project and implications
 
-
-
-
-## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+* The methodology used suited the purpose of finding the necessarty trends and was carried in the order stated above to fit in with results needed. The data was maintained by uploading and viewing each time required for use on a new notebook.
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+* The tarrget was tomcreate visuals to show the relation between different variables that have effect on the malaria incidence in Nigeria.
+The trend lines and Regression plots helped to convey this. 
+ •The trend line conveyed a fluctuation in the decrease of incidence.
+ •While the regression line was inaccurate giving a forecast due to probably the model unable to capture the dat properly or migh be some underreporting of the cases.
 
 ## Analysis techniques used
 
