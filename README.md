@@ -6,7 +6,6 @@ The dataset, sourced from the World Health Organization (WHO),and retrieved from
 
 The analysis includes exploratory data analysis (EDA), data visualization, statistical analysis, and a simple ETL (Extract, Transform, Load) process.
 
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 ## The Dataset
@@ -235,7 +234,9 @@ Trend line: showing the effect of estimsted case vs estimated death over time
 Trend line: for  malaria incidence in Nigeria.
 Regression line: for forecasting
 
-The dashboardvwas designed with the layman in mind so anyone coukld easily understyand the visuals especial;ly those who will aid decision making in government.
+The dashboard was designed with the layman in mind so anyone coukld easily understyand the visuals especial;ly those who will aid decision making in government.
+This is a link to the dasboard on Tableau public.
+https://public.tableau.com/shared/2XJPKF2YH?:display_count=n&:origin=viz_share_link
 
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
 * Did you recognise gaps in your knowledge, and how did you address them?
