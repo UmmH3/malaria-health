@@ -174,9 +174,9 @@ To check for the data structiure of the merged data, if there are any discrepanc
 
 Check for outliers,negative values and missing values.Box plots used to identify outliers
 
-* Data Distribution:
+* DATA DISTRIBUTION:
 
-Histogram of yearly malaria cases. 
+* Histogram of yearly malaria cases. 
 
 * Malaria trend by WHO REGION
 Aggregated data by WHO region to understand the regional burden of malaria with the use of a bar chart to visualise
@@ -185,12 +185,11 @@ Aggregated data by WHO region to understand the regional burden of malaria with 
 Identified countries with the highest and lowest malaria cases
 
 * Malaria trend in Nigeria
-Correlation Analysis:
 
-* Correlation analysis 
+* Correlation analysis;to understand the relationships between variables
 
-To understand the relationships between variables 
 Correlation Between Reported Cases, Incidence, and Estimated Cases:
+
                    Reported Cases  Malaria Incidence  Estimated Cases
 Reported Cases           1.000000           0.485402        -0.009833
 Malaria Incidence        0.485402           1.000000         0.648249
@@ -211,87 +210,7 @@ Box Plot:using the WHO Region to check for outliers(underreporting)
 Regression Plot:to see if there is a linear relationship between the two variables Reported and Estimated.
 
 ## Statistical Analysis
-Hypothesis Testing: the 3 hypothesis stated above was tested and visual output included
-
-
-7. Key Findings
-Regional Disparities: Africa bears the highest malaria burden globally, with countries like Nigeria, the Democratic Republic of Congo, and Uganda reporting the highest numbers of cases and deaths.
-
-Zero-Case Countries: Several countries (e.g., China, Morocco) report zero cases, indicating potential elimination or very low transmission.
-
-Variability in Estimates: Estimated cases show greater variability across regions compared to reported cases, highlighting potential uncertainties in modeling methods.
-
-Underreporting: Differences between reported and estimated cases suggest underreporting in regions with limited surveillance infrastructure.
-
-High Correlation: Strong positive correlation between reported cases and deaths, indicating a direct relationship between disease incidence and mortality.
-
-8. Code Structure
-The project consists of the following Python scripts:
-
-etl.py: Script for extracting, transforming, and loading the data.
-
-eda.py: Script for performing exploratory data analysis and generating summary statistics.
-
-visualizations.py: Script for creating visualizations such as bar charts, time series plots, and heatmaps.
-
-statistical_analysis.py: Script for performing statistical tests and computing probabilities.
-
-9. Dependencies
-The following tools are required to run this analysis
-
-9.1 Software requirements
-Python (>=3.6)
-
-9.2 Python Libraries
-pandas
-
-matplotlib
-
-seaborn
-
-scipy
-
-statsmodels
-
-To install these dependencies, run:
-
-bash
-pip install pandas matplotlib seaborn scipy statsmodels
-10. Usage
-To reproduce the analysis, follow these steps:
-
-bash
-# Clone the repository
-git clone [repository URL]
-
-# Navigate to the project directory
-cd [project directory]
-
-# Run the ETL script
-python etl.py
-
-# Run the EDA script
-python eda.py
-
-# Run the visualizations script
-python visualizations.py
-
-# Run the statistical analysis script
-python statistical_analysis.py
-11. Potential Limitations
-Data Quality: The accuracy of this project is based on the quality of the underlying data.
-
-Causality: Correlation does not equal causation.
-
-External Factors: The model may not account for policy changes or changes to the health landscape.
-
-12. Future Work
-Analyze Intervention Effectiveness: Evaluate the impact of malaria interventions (e.g., insecticide-treated bed nets, indoor residual spraying) on case and death rates.
-
-Develop Predictive Models: Build time series models to forecast future malaria trends.
-
-Geospatial Analysis: Incorporate spatial data to understand geographic patterns of malaria transmission and mortality.
-
+Hypothesis Testing: the 3 hypothesis stated above was tested and visual output included.
 
 * List the data analysis methods used and explain limitations or alternative approaches.
 * How did you structure the data analysis techniques. Justify your response.
@@ -333,6 +252,25 @@ Geospatial Analysis: Incorporate spatial data to understand geographic patterns 
 
 
 ## Main Data Analysis Libraries
+8. Code Structure
+The project consists of the following Python scripts:
+
+etl.py: Script for extracting, transforming, and loading the data.
+
+eda.py: Script for performing exploratory data analysis and generating summary statistics.
+
+visualizations.py: Script for creating visualizations such as bar charts, time series plots, and heatmaps.
+
+statistical_analysis.py: Script for performing statistical tests and computing probabilities.
+
+9. Dependencies
+The following tools are required to run this analysis
+
+9.1 Software requirements
+Python (>=3.6)
+
+9.2 Python Libraries
+pandas
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
 
 
