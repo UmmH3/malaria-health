@@ -166,56 +166,53 @@ The merged dataset(transformed) was used in the EDA, visualisations and statisti
 
 To understand the data, the following exploratory analysis was done:
 
-Summary Statistics: 
-Calculated descriptive statistics (mean, median, standard deviation, min, max) for numeric columns to understand data distribution.
+* DESCRIPTIVE ANALYSIS:
 
-Missing Values: Checked for and handled missing values in the dataset.
+To check for the data structiure of the merged data, if there are any discrepancies needed to fix.
 
-Data Distribution:
+* HANDLING MISSING/NEGATIVE VALUES
 
-Histograms of malaria cases and deaths.
+Check for outliers,negative values and missing values.Box plots used to identify outliers
 
-Box plots to identify outliers and understand the distribution of cases/deaths by WHO region.
+* Data Distribution:
 
-Country-Level Analysis:
+Histogram of yearly malaria cases. 
 
-Identified countries with the highest and lowest malaria cases and deaths.
+* Malaria trend by WHO REGION
+Aggregated data by WHO region to understand the regional burden of malaria with the use of a bar chart to visualise
 
-Analyzed the trend of countries with zero cases or deaths.
+* Top countries with high malaria burden
+Identified countries with the highest and lowest malaria cases
 
-Regional Analysis:
-
-Aggregated data by WHO region to understand the regional burden of malaria.
-
+* Malaria trend in Nigeria
 Correlation Analysis:
 
-Computed the correlation matrix to understand the relationships between different variables (e.g., cases and deaths).
+* Correlation analysis 
 
-5. Visualizations
-The following visualizations were generated to provide insights into the data:
+To understand the relationships between variables 
+Correlation Between Reported Cases, Incidence, and Estimated Cases:
+                   Reported Cases  Malaria Incidence  Estimated Cases
+Reported Cases           1.000000           0.485402        -0.009833
+Malaria Incidence        0.485402           1.000000         0.648249
+Estimated Cases         -0.009833           0.648249         1.000000
 
-Bar Chart: Comparison of reported vs. estimated cases for the top 10 countries.
+## Visualisations
 
-Time Series Plot: Visualization of malaria trends in Nigeria.
+These visualisations were generated to provide insights into the data:
 
-Regional Comparison Bar Chart: Malaria cases/deaths by WHO region
+Pie Chart: to show the proportion of malaria burden by WHO region
 
-Heatmap: Correlation between cases/deaths
+Scatter Plot:to show if there is a visual relationship between the estimated cases and incidence
 
-Box plot: Visualization of the distribution of malaria data
+Correlation Heatmap: checks the relation between Reported,Incidence and No of cases_median
 
-Charts of zero-cases countries: Display of the countries that recorded zero counts for malaria.
+Box Plot:using the WHO Region to check for outliers(underreporting)
 
-6. Statistical Analysis
-Hypothesis Testing:
+Regression Plot:to see if there is a linear relationship between the two variables Reported and Estimated.
 
-Significant Difference Between Reported and Estimated Cases.
+## Statistical Analysis
+Hypothesis Testing: the 3 hypothesis stated above was tested and visual output included
 
-Regional Differences in Malaria Cases.
-
-Probability Computation:
-
-Probability of a country from a given region having more than a certain number of cases.
 
 7. Key Findings
 Regional Disparities: Africa bears the highest malaria burden globally, with countries like Nigeria, the Democratic Republic of Congo, and Uganda reporting the highest numbers of cases and deaths.
