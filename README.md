@@ -232,56 +232,62 @@ Hypothesis Testing: the 3 hypothesis stated above was tested and visual output i
 * How did you overcome any legal or societal issues?
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+The dashboard was created on Tableau. Idea of the layout was from Balsamiq.
+It is made up of 6 worksheets created from the merged dataset loaded onto Tableau
+The visualisations are:
+Bar Chart: showing the top most countries affected in the Africa Region
+Pie Chart: showing the Region with the highest malara burden
+Trend line: showing the effect of estimsted case vs estimated death over time
+Trend line: for  malaria incidence in Nigeria.
+Regression line: for forecasting
 
-## Unfixed Bugs
+The dashboardvwas designed withnthe layman in mind so anyone coukld easily understyand the visuals especial;ly those who will aid decision making in government.
+
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
 * Did you recognise gaps in your knowledge, and how did you address them?
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+* Had initial hurdle of loading the merged datyaset onto the EDA notebook. I found out i was using the wrong path name, i assumed it was required but it wasn't because it had alraedy been saved in jupyter so coukld load directly.
+* Had to change the data type for the Estimated death and Estmated Cases when initially loaded on Tableau to integer because it was still in object.
 
-## Deployment
-### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 
 ## Main Data Analysis Libraries
-8. Code Structure
 The project consists of the following Python scripts:
 
-etl.py: Script for extracting, transforming, and loading the data.
+etl.ipynb: for extracting, transforming, and loading the data.
 
-eda.py: Script for performing exploratory data analysis and generating summary statistics.
+eda.ipynb: for performing exploratory data analysis and generating summary statistics.
 
-visualizations.py: Script for creating visualizations such as bar charts, time series plots, and heatmaps.
+visualizations.ipynb: Script for creating visualizations such as bar charts, time series plots, and heatmaps.
 
-statistical_analysis.py: Script for performing statistical tests and computing probabilities.
+statistical_analysis.ipynb: for performing statistical tests and computing probabilities.
 
-9. Dependencies
-The following tools are required to run this analysis
+ Dependencies
+The following tools were required to run this
 
-9.1 Software requirements
-Python (>=3.6)
+Software requirements
+Python 3.12
 
-9.2 Python Libraries
-pandas
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+Python Libraries
+For Data Handling & Manipulation
+pandas – For data cleaning, manipulation, and merging datasets.
+numpy – For numerical operations and handling large arrays.
+
+For Data Visualisation
+matplotlib – For basic plotting and data visualization.
+seaborn – For creating more advanced and aesthetically appealing statistical plots.
+plotly – For interactive visualizations (e.g., interactive maps, trend graphs).
+
+Statistical Analysi
+scipy – For statistical testing and probability distributions.
+statsmodels – For regression analysis and time series forecasting.
+scikit-learn – For predictive modeling (e.g., linear regression, clustering).
+
+Time Series Analysis
+statsmodels.tsa – For time series forecasting (e.g., ARIMA models).
 
 
 ## Credits 
