@@ -222,14 +222,8 @@ Regression Plot:to see if there is a linear relationship between the two variabl
 ## Statistical Analysis
 Hypothesis Testing: the 3 hypothesis stated above was tested and visual output included.
 
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
-
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+* There were no ethical issues to consider. All the data required didn't have any names or personal information included.
 
 ## Dashboard Design
 The dashboard was created on Tableau. Idea of the layout was from Balsamiq.
@@ -241,7 +235,7 @@ Trend line: showing the effect of estimsted case vs estimated death over time
 Trend line: for  malaria incidence in Nigeria.
 Regression line: for forecasting
 
-The dashboardvwas designed withnthe layman in mind so anyone coukld easily understyand the visuals especial;ly those who will aid decision making in government.
+The dashboardvwas designed with the layman in mind so anyone coukld easily understyand the visuals especial;ly those who will aid decision making in government.
 
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
 * Did you recognise gaps in your knowledge, and how did you address them?
@@ -292,14 +286,13 @@ statsmodels.tsa – For time series forecasting (e.g., ARIMA models).
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* The data set was from Kaggle. The initial project ideation came from a kaggle bot starter code on the dataset.
 
-### Content 
+* I got peer support and facilitator support when i got stuck.
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+* Co-pilot was beneficial in correction of syntax errors or code issue in general. But i relied on other forms of AI where necessary.
+
+
 
 ### Media
 
@@ -309,7 +302,6 @@ statsmodels.tsa – For time series forecasting (e.g., ARIMA models).
 
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* A big thanks to Connor for patiently explaining to me and help sort the issue at hand or guide me to it. Thanks to Vasi and the data coach team for resolving issues when required.
 
 
-[def]: data/incidence.csv
